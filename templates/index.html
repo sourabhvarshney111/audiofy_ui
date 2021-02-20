@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
   <div class="navigation-bar">
@@ -42,11 +43,27 @@
           <h2 class="index-subtitle">Love the way you read</h2>
         <div class="action-buttons">
           <a href="home.html"><button class="btn btn-primary action-button">Go Live</button></a>
-          <button class="btn btn-primary action-button">Upload Ebook</button>
+          
+          <button class="btn btn-primary action-button" data-toggle="modal" data-target="#myModal" id="mybtn">Upload Ebook</button>       
         </div>
       </div>      
     </div>
   </div>
-
+  <div class="modal fade" id="myModal" role="dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Please upload the pdf you would like to Audiofy</h4>
+        </div>
+        <div class="modal-body">
+          <input type="file" id="myfile" name="myfile" accept=".pdf">
+          <!-- <p>Some text in the modal.</p> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+  </div>
 </body>
 </html>
