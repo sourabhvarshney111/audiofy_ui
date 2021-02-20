@@ -1,10 +1,41 @@
-.navigation-bar{
-	margin-bottom: 20px;
+.action-buttons{
+	margin-top: 60px;
+	margin-left: 14%;
 }
 
-.action-buttons{
-	margin: 20px;
-	.action-button{
-		margin: 10px;
-	}
+.action-button{
+	margin-right: 10px;
+	width: 30%;
 }
+
+.nav-wrapper{
+	background-color: #6C63FF;
+}
+
+.brand-logo{
+	margin-left: 40px; 
+	color: white;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+.index-image{
+	width: 85%;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+.index-title{
+	font-weight: bold; 
+	color: #6C63FF; 
+	font-size: 120px; 
+	margin-top: 20%; 
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+.index-subtitle{
+	color: #6C63FF;
+	font-family: 'Raleway', sans-serif;
+	margin-left: 16%;
+}
+
+
