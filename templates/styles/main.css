@@ -1,0 +1,10 @@
+.navigation-bar{
+	margin-bottom: 20px;
+}
+
+.action-buttons{
+	margin: 20px;
+	.action-button{
+		margin: 10px;
+	}
+}
