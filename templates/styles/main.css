@@ -39,3 +39,15 @@
 }
 
 
+.action-buttons{
+	margin: 20px;
+}
+
+ul:not(.browser-default)>li {
+    list-style-type: disc;
+}
+
+.custom .col-md-6 {
+	padding-left: 150px;
+	top: 150px;
+}
