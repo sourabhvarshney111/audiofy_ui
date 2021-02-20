@@ -4,6 +4,9 @@
   <title>Audiofy</title>
   <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 
@@ -18,28 +21,25 @@
 <body>
   <div class="navigation-bar">
     <nav>
-      <div class="nav-wrapper" style="background-color: white">
-        <a href="index.html" class="brand-logo" style="margin-left: 40px; color: #6C63FF">Audiofy</a>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">Audiofy</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html" style="color: #6C63FF">About Audiofy</a></li>
-          <li><a href="badges.html" style="color: #6C63FF">Meet the Team</a></li>
+          <li><a href="about.html" style="color: white">About Audiofy</a></li>
+          <li><a href="#" style="color: white">Meet the Team</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
-  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-  <a class="navbar-brand" href="/" style="font-size:40px; padding-left: 10%">Audiofy</a>
-  </nav> -->
   <div class="container-fluid"> 
-    <div class="row custom">  
-      <div class="col-md-6">
+    <div class="row">  
+      <div class="col-md-6 home-content">
         <h3>How to use?</h3>
         <div style="margin:20px">
-          <ul>
+          <ul class="custom-list">
             <li>Start the IP webcam server on your smart phone</li>
             <li>Enter the IP address of your webcam below</li>
-            <li>Hold the camera above the page containing texts to scan and extact the emotion</li>
+            <li>Hold the camera above the page containing texts to scan and extract the emotion</li>
           </ul>
         </div>
         <hr>
@@ -49,25 +49,22 @@
             <form action="camera" method="post">
               {% csrf_token %}
               <div class="form-group">
-                <label>Web-cam IP address</label>
-                <input type="text" class="form-control" placeholder="http://" name="camurl">
+                <input type="text" class="form-control" placeholder="Webcam IP address (http://)" name="camurl">
               </div>
-              <button type="submit" class="btn btn-primary" style="background:#6C63FF">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
         <hr>
         <h3>Pre-requisites</h3>
         <div style="margin:20px">
-          <!-- <p style="text-align:justify">Make sure that your phone and laptop are connected to the same wifi network.
-            Also, make sure that the room is well lit and try to keep the camera as stable as possible for better character recognition.</p> -->
-            <ul >
+            <ul class="custom-list">
               <li>Make sure that your phone and laptop are connected to the same wifi network</li>
               <li>Make sure that the room is well lit and try to keep the camera as stable as possible for better character recognition</li>
             </ul>
         </div>
       </div>
       <div class="col-md-6">
-        <img src="utils/home_image.svg" alt="Lights" style="width:70%">
+        <img class="home-image" src="utils/home_image.svg" alt="Lights">
       </div> 
     </div>
   </div>

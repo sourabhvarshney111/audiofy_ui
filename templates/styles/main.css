@@ -6,10 +6,11 @@
 .action-button{
 	margin-right: 10px;
 	width: 30%;
+	background-color:#337AB7;
 }
 
 .nav-wrapper{
-	background-color: #6C63FF;
+	background-color:#337AB7;
 }
 
 .brand-logo{
@@ -26,28 +27,37 @@
 
 .index-title{
 	font-weight: bold; 
-	color: #6C63FF; 
+	color:#337AB7; 
 	font-size: 120px; 
 	margin-top: 20%; 
 	font-family: 'Balsamiq Sans', cursive;
 }
 
 .index-subtitle{
-	color: #6C63FF;
+	color: grey;
 	font-family: 'Raleway', sans-serif;
 	margin-left: 16%;
 }
 
-
-.action-buttons{
-	margin: 20px;
-}
-
-ul:not(.browser-default)>li {
+.custom-list ul:not(.browser-default)>li {
     list-style-type: disc;
 }
 
-.custom .col-md-6 {
-	padding-left: 150px;
-	top: 150px;
+.home-image{	
+	width: 90%;
+	margin-top: 90px;
+	margin-left: 40px;
+}
+
+.home-content h3{
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+.home-content li{
+	margin-bottom: 10px;
+}
+
+div .home-content{
+	margin-top: 40px;
+	padding-left: 40px;
 }
